@@ -1,0 +1,16 @@
+.pokemon {
+  margin: 10px;
+  display: flex;
+
+  &__info {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__pic {
+    display: flex;
+    align-items: center;
+  }
+}
