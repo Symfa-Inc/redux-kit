@@ -1,0 +1,2 @@
+.pokemon{margin:10px;display:flex}.pokemon__info{margin:20px;display:flex;flex-direction:column;justify-content:center}.pokemon__pic{display:flex;align-items:center}.page{height:100%;display:flex;flex-direction:column}.page__body{height:90%;display:grid;grid-template-columns:auto auto auto;overflow-y:scroll}.page__footer,.page__header{height:5%;margin:10px;display:flex;align-items:center}.page__header h2{margin:0;border-bottom:1px solid #d3d3d3}#root,body,html{height:100%;margin:0}
+/*# sourceMappingURL=main.9daeae9c.chunk.css.map */
