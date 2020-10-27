@@ -2,6 +2,11 @@
   "name": "sw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://aiscom-llc.github.io/redux-kit",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.aisnovations.com:modules/redux-kit.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -14,6 +19,7 @@
     "@wellyes/redux-kit": "file:..",
     "axios": "^0.20.0",
     "customize-cra": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-app-rewired": "^2.1.6",
@@ -31,7 +37,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "lint": "eslint ./src --ext tsx,ts",
-    "lint:fix": "eslint ./src --ext tsx,ts --fix"
+    "lint:fix": "eslint ./src --ext tsx,ts --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
