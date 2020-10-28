@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/redux-kit/static/css/main.9daeae9c.chunk.css",
-    "main.js": "/redux-kit/static/js/main.3a63db53.chunk.js",
-    "main.js.map": "/redux-kit/static/js/main.3a63db53.chunk.js.map",
+    "main.js": "/redux-kit/static/js/main.54416867.chunk.js",
+    "main.js.map": "/redux-kit/static/js/main.54416867.chunk.js.map",
     "runtime-main.js": "/redux-kit/static/js/runtime-main.39c87341.js",
     "runtime-main.js.map": "/redux-kit/static/js/runtime-main.39c87341.js.map",
     "static/js/2.7a36e855.chunk.js": "/redux-kit/static/js/2.7a36e855.chunk.js",
     "static/js/2.7a36e855.chunk.js.map": "/redux-kit/static/js/2.7a36e855.chunk.js.map",
     "index.html": "/redux-kit/index.html",
-    "precache-manifest.7c262cf617d3bf7bf7cc09a61e12feb9.js": "/redux-kit/precache-manifest.7c262cf617d3bf7bf7cc09a61e12feb9.js",
+    "precache-manifest.f378dada809d4d48b1ae458052c2c424.js": "/redux-kit/precache-manifest.f378dada809d4d48b1ae458052c2c424.js",
     "service-worker.js": "/redux-kit/service-worker.js",
     "static/css/main.9daeae9c.chunk.css.map": "/redux-kit/static/css/main.9daeae9c.chunk.css.map",
     "static/js/2.7a36e855.chunk.js.LICENSE.txt": "/redux-kit/static/js/2.7a36e855.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.39c87341.js",
     "static/js/2.7a36e855.chunk.js",
     "static/css/main.9daeae9c.chunk.css",
-    "static/js/main.3a63db53.chunk.js"
+    "static/js/main.54416867.chunk.js"
   ]
 }
