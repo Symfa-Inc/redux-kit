@@ -15,7 +15,7 @@ export const Pokemon: FC<TPokemon> = ({ name, url }) => {
       <div className="pokemon__info">
         <div className="pokemon__info__name">name: {name}</div>
         <div className="pokemon__info__url">
-          <a href={url}>URL</a>
+          <a href={`https://www.pokemon.com/us/pokedex/${name}`}>URL</a>
         </div>
       </div>
     </div>
