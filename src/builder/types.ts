@@ -33,3 +33,11 @@ export interface WorkerPayload<T, P, E> {
   onFailHook: Function;
   formData: boolean;
 }
+
+export type ReducerValue<T, P> = T & {
+  [x: string]: boolean | P;
+};
+
+export type Reducer<T, P> = {
+  [x: string]: () => ReducerValue<T, P>;
+};

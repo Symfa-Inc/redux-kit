@@ -1,5 +1,5 @@
 import { AsyncActionCreators } from './action-types';
-import { Action, DataMasks } from './types';
+import { Action, DataMasks, Reducer, ReducerValue } from './types';
 
 export const eraseReducer = (actionCreator: any, state: any, action: Action) => ({
   [actionCreator.type]: {
@@ -19,24 +19,24 @@ export const reducer = <T, Param, Payload, Error>(
   state: T,
   action: Action,
   masks?: DataMasks,
-): { [k: string]: T } => {
+): Reducer<T, Param> => {
   const { loadingMask = 'isLoading', errorMask = 'errors', dataMask } = masks || {};
   return {
-    [actionCreator.started.type]: {
+    [actionCreator.started.type]: (): ReducerValue<T, Param> => ({
       ...state,
       [loadingMask]: true,
       [errorMask]: false,
-    },
-    [actionCreator.done.type]: {
+    }),
+    [actionCreator.done.type]: (): ReducerValue<T, Param> => ({
       ...state,
       ...(dataMask ? { [dataMask]: action.payload } : {}),
       [loadingMask]: false,
       [errorMask]: false,
-    },
-    [actionCreator.failed.type]: {
+    }),
+    [actionCreator.failed.type]: (): ReducerValue<T, Param> => ({
       ...state,
       [errorMask]: action.payload,
       [loadingMask]: false,
-    },
+    }),
   };
 };

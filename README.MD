@@ -89,7 +89,7 @@ Library for reducing amount of redux code. Everything that you need is to call "
   const states = {
     ...reducer(pokemons, state, action, { dataMask: 'pokemons', loadingMask: 'loading', errorMask: 'errors' }),
   };
-  return states[action.type] || state;
+  return states[action.type] ? states[action.type]() : state;
 };
 ```
 
